@@ -1,15 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output/output.css">
-    <title>GameHub</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 
         # Home Page
-     -->
-</head>
-<body>
-    
-</body>
+    -->
+    <!-- 
+        # Meta Data
+    -->
+    <meta name="title" content="GameHub" />
+    <meta name="description" content="A Place to buy game designed by Hasib" />
+    <title>GameHub</title>
+    <!-- 
+        # Google Fonts
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 
+        # Font Awesome
+    -->
+    <script
+      src="https://kit.fontawesome.com/2c27359b31.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- 
+        # Custom CSS
+    -->
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div class="relative"></div>
+    <!-- Nav and Header START -->
+    <section class="bg-black">
+      <div
+        class="w-full bg-transparent  top-0 transition-[background-color] duration-500 ease-in-out z-10 h-[60px] px-[55px] text-white flex justify-between items-center"
+      >
+        <div class="logo">
+          <a href="index.html" class="font-extrabold text-3xl">LOGO</a>
+        </div>
+        <div class="hidden lg:flex gap-4 items-center sm:none">
+          <nav class="z-10 flex gap-[55px] xl:gap-[88px] text-[16px] relative">
+            <a class="nav__link cursor-pointer" href="index.html">Home</a>
+            <a class="nav__link cursor-pointer" href="./about-us.html"
+              >About Us</a
+            >
+            <a class="nav__link cursor-pointer" href="./portfolio.html"
+              >Portfolio</a
+            >
+            <a class="nav__link cursor-pointer" href="./news.html">News</a>
+            <span class="nav__hover">
+              <svg
+                width="39"
+                height="4"
+                viewBox="0 0 39 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="31" height="4" rx="2" fill="#DC7000" />
+                <rect x="34" width="5" height="4" rx="2" fill="#DC7000" />
+              </svg>
+            </span>
+          </nav>
+          <a
+            class="px-7 py-3 bg-[#FA9021] rounded-[6px] capitalize"
+            href="./contact.html"
+            >Contact us</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Nav and Header END -->
+
+    <!--  # Hero Section Start -->
+    <section class="bg-gradient-to-b from-[#010100] to-[#080400]">
+      <div
+        class="container w-full mx-auto flex h-screen px-[40px] items-center"
+      >
+        <div class="flex flex-1 flex-col gap-5 max-w-[50%]">
+          <h3 class="text-[#E87D0E] font-bold">3D game Dev</h3>
+          <h1 class="text-white font-extrabold text-[50px]">
+            Work that we <br> produce for our <br>clients
+          </h1>
+          <p class="text-[16px] text-white">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+          </p>
+          <a
+            class="bg-gradient-to-r w-fit px-8 font-[500] text-white py-4 rounded-[40px] from-[#FA8305] to-[#FB9E3C]"
+            href=""
+            >Get more details</a
+          >
+        </div>
+        <div class="absolute top-0  max-w-[50%] flex right-0">
+          <div
+            class="flex-1 bg-contain bg-bottom bg-no-repeat"
+            style="background-image: url('./assets/img/hero.png')"
+          ></div>
+          <div>
+            <img
+              class="absolute top-[50%] left-0 w-[100px] h-[30px] object-contain"
+              src="./assets/img/c1.png"
+              alt=""
+            />
+            <img
+              class="absolute top-[20%] left-[20%] w-[100px] h-[100px] object-contain"
+              src="./assets/img/c2.png"
+              alt=""
+            />
+            <img
+              class="absolute top-[20%] left-[70%] w-[60px] h-[60px] object-contain"
+              src="./assets/img/c3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  # Trending Games Start -->
+    <section class="bg-gradient-to-t from-[#0f0800] to-[#090500]">
+      <div class="container mx-auto text-white font-rubik px-[40px]">
+        <div class="flex justify-between items-center py-10">
+          <h3 class="font-bold text-[24px] xl:text-[31px]">
+            Currently Trending Games
+          </h3>
+          <a
+            href=""
+            class="bg-[rgba(255,255,255,.11)] px-7 py-3 rounded-[10px] font-medium text-[16px] xl:text-[20px] uppercase"
+            >See All</a>
+        </div>
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-10">
+          <div class="flex flex-col justify-center items-center">
+            <div class="h-[250px]">
+              <img
+                class="rounded-[10px] w-full h-full object-cover"
+                src="./assets/img/g1.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex items-center gap-2 mt-4 lg:mt-6">
+              <span class="w-[25px] h-[25px] object-cover">
+                <svg
+                  width="19"
+                  height="25"
+                  viewBox="0 0 19 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.8216 14.6372C18.5352 10.9087 16.7993 8.57221 15.2678 6.5104C13.8498 4.60161 12.625 2.95327 12.625 0.521725C12.625 0.326413 12.5156 0.147897 12.3422 0.0583953C12.1682 -0.0316437 11.9592 -0.0168976 11.801 0.0980438C9.50103 1.74384 7.58198 4.51772 6.91162 7.1644C6.44624 9.00703 6.38467 11.0785 6.37603 12.4466C4.252 11.993 3.77085 8.81582 3.76577 8.7812C3.74185 8.6164 3.64116 8.47299 3.49468 8.39468C3.34668 8.31738 3.17271 8.31176 3.02266 8.38603C2.91128 8.43994 0.288769 9.77246 0.136181 15.0928C0.125488 15.2698 0.125 15.4474 0.125 15.6249C0.125 20.7936 4.33081 24.9992 9.5 24.9992C9.50713 24.9997 9.51475 25.0007 9.52085 24.9992C9.5229 24.9992 9.5249 24.9992 9.52744 24.9992C14.6839 24.9844 18.875 20.7845 18.875 15.6249C18.875 15.3649 18.8216 14.6372 18.8216 14.6372ZM9.5 23.9576C7.77676 23.9576 6.375 22.4644 6.375 20.6289C6.375 20.5664 6.37451 20.5033 6.37905 20.426C6.3999 19.6519 6.54692 19.1235 6.70815 18.772C7.0103 19.421 7.55044 20.0176 8.42783 20.0176C8.71572 20.0176 8.94868 19.7846 8.94868 19.4968C8.94868 18.7553 8.96396 17.8998 9.14858 17.1277C9.31289 16.4432 9.70552 15.7148 10.203 15.131C10.4242 15.8888 10.8556 16.5021 11.2767 17.1008C11.8794 17.9572 12.5025 18.8427 12.6119 20.3527C12.6185 20.4422 12.6251 20.5323 12.6251 20.6289C12.625 22.4644 11.2232 23.9576 9.5 23.9576Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <span class="font-[16px]">40 Followers</span>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="h-[250px]">
+              <img
+                class="rounded-[10px] w-full h-full object-cover"
+                src="./assets/img/g2.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex items-center gap-2 mt-4 lg:mt-6">
+              <span class="w-[25px] h-[25px] object-cover">
+                <svg
+                  width="19"
+                  height="25"
+                  viewBox="0 0 19 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.8216 14.6372C18.5352 10.9087 16.7993 8.57221 15.2678 6.5104C13.8498 4.60161 12.625 2.95327 12.625 0.521725C12.625 0.326413 12.5156 0.147897 12.3422 0.0583953C12.1682 -0.0316437 11.9592 -0.0168976 11.801 0.0980438C9.50103 1.74384 7.58198 4.51772 6.91162 7.1644C6.44624 9.00703 6.38467 11.0785 6.37603 12.4466C4.252 11.993 3.77085 8.81582 3.76577 8.7812C3.74185 8.6164 3.64116 8.47299 3.49468 8.39468C3.34668 8.31738 3.17271 8.31176 3.02266 8.38603C2.91128 8.43994 0.288769 9.77246 0.136181 15.0928C0.125488 15.2698 0.125 15.4474 0.125 15.6249C0.125 20.7936 4.33081 24.9992 9.5 24.9992C9.50713 24.9997 9.51475 25.0007 9.52085 24.9992C9.5229 24.9992 9.5249 24.9992 9.52744 24.9992C14.6839 24.9844 18.875 20.7845 18.875 15.6249C18.875 15.3649 18.8216 14.6372 18.8216 14.6372ZM9.5 23.9576C7.77676 23.9576 6.375 22.4644 6.375 20.6289C6.375 20.5664 6.37451 20.5033 6.37905 20.426C6.3999 19.6519 6.54692 19.1235 6.70815 18.772C7.0103 19.421 7.55044 20.0176 8.42783 20.0176C8.71572 20.0176 8.94868 19.7846 8.94868 19.4968C8.94868 18.7553 8.96396 17.8998 9.14858 17.1277C9.31289 16.4432 9.70552 15.7148 10.203 15.131C10.4242 15.8888 10.8556 16.5021 11.2767 17.1008C11.8794 17.9572 12.5025 18.8427 12.6119 20.3527C12.6185 20.4422 12.6251 20.5323 12.6251 20.6289C12.625 22.4644 11.2232 23.9576 9.5 23.9576Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <span class="font-[16px]">40 Followers</span>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="h-[250px]">
+              <img
+                class="rounded-[10px] w-full h-full object-cover"
+                src="./assets/img/g3.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex items-center gap-2 mt-4 lg:mt-6">
+              <span class="w-[25px] h-[25px] object-cover">
+                <svg
+                  width="19"
+                  height="25"
+                  viewBox="0 0 19 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.8216 14.6372C18.5352 10.9087 16.7993 8.57221 15.2678 6.5104C13.8498 4.60161 12.625 2.95327 12.625 0.521725C12.625 0.326413 12.5156 0.147897 12.3422 0.0583953C12.1682 -0.0316437 11.9592 -0.0168976 11.801 0.0980438C9.50103 1.74384 7.58198 4.51772 6.91162 7.1644C6.44624 9.00703 6.38467 11.0785 6.37603 12.4466C4.252 11.993 3.77085 8.81582 3.76577 8.7812C3.74185 8.6164 3.64116 8.47299 3.49468 8.39468C3.34668 8.31738 3.17271 8.31176 3.02266 8.38603C2.91128 8.43994 0.288769 9.77246 0.136181 15.0928C0.125488 15.2698 0.125 15.4474 0.125 15.6249C0.125 20.7936 4.33081 24.9992 9.5 24.9992C9.50713 24.9997 9.51475 25.0007 9.52085 24.9992C9.5229 24.9992 9.5249 24.9992 9.52744 24.9992C14.6839 24.9844 18.875 20.7845 18.875 15.6249C18.875 15.3649 18.8216 14.6372 18.8216 14.6372ZM9.5 23.9576C7.77676 23.9576 6.375 22.4644 6.375 20.6289C6.375 20.5664 6.37451 20.5033 6.37905 20.426C6.3999 19.6519 6.54692 19.1235 6.70815 18.772C7.0103 19.421 7.55044 20.0176 8.42783 20.0176C8.71572 20.0176 8.94868 19.7846 8.94868 19.4968C8.94868 18.7553 8.96396 17.8998 9.14858 17.1277C9.31289 16.4432 9.70552 15.7148 10.203 15.131C10.4242 15.8888 10.8556 16.5021 11.2767 17.1008C11.8794 17.9572 12.5025 18.8427 12.6119 20.3527C12.6185 20.4422 12.6251 20.5323 12.6251 20.6289C12.625 22.4644 11.2232 23.9576 9.5 23.9576Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <span class="font-[16px]">40 Followers</span>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="h-[250px]">
+              <img
+                class="rounded-[10px] w-full h-full object-cover"
+                src="./assets/img/g4.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex items-center gap-2 mt-4 lg:mt-6">
+              <span class="w-[25px] h-[25px] object-cover">
+                <svg
+                  width="19"
+                  height="25"
+                  viewBox="0 0 19 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.8216 14.6372C18.5352 10.9087 16.7993 8.57221 15.2678 6.5104C13.8498 4.60161 12.625 2.95327 12.625 0.521725C12.625 0.326413 12.5156 0.147897 12.3422 0.0583953C12.1682 -0.0316437 11.9592 -0.0168976 11.801 0.0980438C9.50103 1.74384 7.58198 4.51772 6.91162 7.1644C6.44624 9.00703 6.38467 11.0785 6.37603 12.4466C4.252 11.993 3.77085 8.81582 3.76577 8.7812C3.74185 8.6164 3.64116 8.47299 3.49468 8.39468C3.34668 8.31738 3.17271 8.31176 3.02266 8.38603C2.91128 8.43994 0.288769 9.77246 0.136181 15.0928C0.125488 15.2698 0.125 15.4474 0.125 15.6249C0.125 20.7936 4.33081 24.9992 9.5 24.9992C9.50713 24.9997 9.51475 25.0007 9.52085 24.9992C9.5229 24.9992 9.5249 24.9992 9.52744 24.9992C14.6839 24.9844 18.875 20.7845 18.875 15.6249C18.875 15.3649 18.8216 14.6372 18.8216 14.6372ZM9.5 23.9576C7.77676 23.9576 6.375 22.4644 6.375 20.6289C6.375 20.5664 6.37451 20.5033 6.37905 20.426C6.3999 19.6519 6.54692 19.1235 6.70815 18.772C7.0103 19.421 7.55044 20.0176 8.42783 20.0176C8.71572 20.0176 8.94868 19.7846 8.94868 19.4968C8.94868 18.7553 8.96396 17.8998 9.14858 17.1277C9.31289 16.4432 9.70552 15.7148 10.203 15.131C10.4242 15.8888 10.8556 16.5021 11.2767 17.1008C11.8794 17.9572 12.5025 18.8427 12.6119 20.3527C12.6185 20.4422 12.6251 20.5323 12.6251 20.6289C12.625 22.4644 11.2232 23.9576 9.5 23.9576Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <span class="font-[16px]">40 Followers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  # Treding Games END -->
+    <!--  # Feature Game  START-->
+    <section class="bg-gradient-to-t from-[#1a0e00] to-[#0f0800] font-poppins min-h-[1100px]">
+      <div class=" text-white px-[40px] mx-auto container flex flex-col gap-[67px]">
+        <h1 class="text-center text-[35px] font-semibold">
+          Lorem Ipsum is simply dummy text of the <br />
+          printing and typesetting industry.
+        </h1>
+        <div class="flex flex-col gap-[32px]">
+          <h3 class="text-[30px] font-semibold">Lorem Ipsum</h3>
+          <p class="text-[16px] font-normal max-w-[38%]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+        </div>
+        <div class="relative">
+          <div class="absolute z-1 top-[-75px] right-[20%]">
+            <img class="-z-[99]" src="./assets/img/dot.png" alt="" />
+          </div>
+
+          <div class="absolute top-0 z-10 block w-full max-h-[462px] object-left-bottom rounded-[5px] overflow-hidden">
+            <img
+              class="w-full h-full object-bottom"
+              src="./assets/img/g5.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  # Feature Game  End-->
+    <!-- #  Types of Game  Start-->
+    <section class="relative">
+      <!-- Background Image -->
+      <div
+        class="bg-cover bg-no-repeat w-full h-[100vh] bg-center blur-[2px]"
+        style="background-image: url('./assets/img/bg.jpeg')"
+      ></div>
+
+      <!-- Text Overlay Container -->
+      <div class="absolute top-0 left-0 bottom-0 right-0 z-50 bg-gradient-to-t from-[rgba(0,0,0,.54)] to-[rgba(0,0,0,.65)] text-white">
+        <div class="container mx-auto mt-[100px] flex flex-col gap-[60px]">
+          <h1 class="text-4xl font-bold mb-4 text-center w-full lg:w-[50%] mx-auto">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </h1>
+          <p class=" text-center xl:w-[60%] mx-auto sm:w-full">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+
+          <!-- Grid with Items -->
+          <div class=" grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] text-center gap-4">
+            <div class="flex flex-col gap-4 items-center justify-center">
+              <img
+                src="./assets/img/icon1.png"
+                alt=""
+                class="mr-2 h-[50px] w-[50px] bg-white rounded-full p-2"
+              />
+              <span class="text-sm font-semibold">Mobile Game Development</span>
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="mr-2 h-[20px] w-[20px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4 items-center justify-center">
+              <img
+                src="./assets/img/icon2.png"
+                alt=""
+                class="mr-2 h-[50px] w-[50px] bg-white rounded-full p-2"
+              />
+              <span class="text-sm font-semibold">PC Game Development</span>
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="mr-2 h-[20px] w-[20px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4 items-center justify-center">
+              <img
+                src="./assets/img/icon3.png"
+                alt=""
+                class="mr-2 h-[50px] w-[50px] bg-white rounded-full p-2"
+              />
+              <span class="text-sm font-semibold">PS4 Game Development</span>
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="mr-2 h-[20px] w-[20px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4 items-center justify-center">
+              <img
+                src="./assets/img/icon4.png"
+                alt=""
+                class="mr-2 h-[50px] w-[50px] bg-white rounded-full p-2"
+              />
+              <span class="text-sm font-semibold">AR/VR Game Development</span>
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="mr-2 h-[20px] w-[20px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4 items-center justify-center">
+              <img
+                src="./assets/img/icon5.png"
+                alt=""
+                class="mr-2 h-[50px] w-[50px] bg-white rounded-full p-2"
+              />
+              <span class="text-sm font-semibold">AR/VR Design</span>
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="mr-2 h-[20px] w-[20px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4 items-center justify-center">
+              <img
+                src="./assets/img/icon6.png"
+                alt=""
+                class="mr-2 h-[50px] w-[50px] bg-white rounded-full p-2"
+              />
+              <span class="text-sm font-semibold">3d Modeling</span>
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="mr-2 h-[20px] w-[20px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #  Types of Game  End-->
+    <!--# Our Recent Projects START -->
+    <section class="bg-gradient-to-b from-[rgba(0,0,0,.54)] to-[rgba(0,0,0,.65)] py-[100px]">
+      <h1>Our Recent Projects</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="grid grid-cols-[repeat(auto-fit, minmax(200px, 1fr))] gap-10">
+        <div class="rounded-[10px] overflow-hidden"><img class="object-cover" src="./assets/img/gb1.jpeg" alt=""></div>
+        <div class="rounded-[10px] overflow-hidden"><img class="object-cover" src="./assets/img/gb2.jpeg" alt=""></div>
+        <div class="rounded-[10px] overflow-hidden"><img class="object-cover" src="./assets/img/gb3.jpeg" alt=""></div>
+        <div class="rounded-[10px] overflow-hidden"><img class="object-cover" src="./assets/img/gb4.jpeg" alt=""></div>
+        <div class="rounded-[10px] overflow-hidden"><img class="object-cover" src="./assets/img/gb5.jpeg" alt=""></div>
+        <div class="rounded-[10px] overflow-hidden"><img class="object-cover" src="./assets/img/gb6.jpeg" alt=""></div>
+      </div>
+    </section>
+    <!--# Our Recent Projects END -->
+  </body>
 </html>

@@ -1,14 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+        # Home Page
+    -->
+    <!-- 
+        # Meta Data
+    -->
+    <meta name="title" content="GameHub" />
+    <meta name="description" content="A Place to buy game designed by Hasib" />
     <title>GameHub</title>
     <!-- 
-        # News Page
+        # Google Fonts
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 
+        # Font Awesome
+    -->
+    <script
+      src="https://kit.fontawesome.com/2c27359b31.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- 
+      # Ion Icon
      -->
-</head>
-<body>
-    
-</body>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- 
+        # Custom CSS
+    -->
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-poppins">
+    <!-- header Section Start -->
+    <section
+      class="p-3 py-3 md:px-6 md:py-6 w-full h-[60px] bg-black text-white relative"
+    >
+      <div class="flex justify-between items-center tracking-[1px] uppercase">
+        <div>
+          <a class="font-extrabold text-[24px]" href="index.html">Logo</a>
+        </div>
+        <div
+          class="lg:hidden h-[32px] w-[32px] fill-white cursor-pointer"
+          id="menuBtn"
+        >
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="32"
+                d="M80 160h352M80 256h352M80 352h352"
+              />
+            </svg>
+          </div>
+
+          <nav
+            class="absolute hidden top-0 right-0 w-1/2 h-screen bg-red-500 text-white"
+            id="crossBtn"
+          >
+            <div class="h-[34px] w-[34px] absolute right-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M368 368L144 144M368 144L144 368"
+                />
+              </svg>
+            </div>
+
+            <div
+              id="mobileMenu"
+              class="w-full h-full flex flex-col items-center justify-center"
+            >
+              <a class="block nav__link cursor-pointer" href="index.html"
+                >Home</a
+              >
+              <a class="block nav__link cursor-pointer" href="./about-us.html"
+                >About Us</a
+              >
+              <a class="block nav__link cursor-pointer" href="./portfolio.html"
+                >Portfolio</a
+              >
+              <a class="block nav__link cursor-pointer" href="./news.html"
+                >News</a
+              >
+              <span class="nav__hover">
+                <svg
+                  width="39"
+                  height="4"
+                  viewBox="0 0 39 4"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="31" height="4" rx="2" fill="#DC7000" />
+                  <rect x="34" width="5" height="4" rx="2" fill="#DC7000" />
+                </svg>
+              </span>
+            </div>
+          </nav>
+        </div>
+        <div class="hidden lg:flex gap-4 items-center sm:none">
+          <nav class="z-10 flex gap-[55px] xl:gap-[88px] text-[16px] relative">
+            <a class="block nav__link cursor-pointer" href="index.html">Home</a>
+            <a class="block nav__link cursor-pointer" href="./about-us.html"
+              >About Us</a
+            >
+            <a class="block nav__link cursor-pointer" href="./portfolio.html"
+              >Portfolio</a
+            >
+            <a class="block nav__link cursor-pointer" href="./news.html"
+              >News</a
+            >
+            <span class="nav__hover">
+              <svg
+                width="39"
+                height="4"
+                viewBox="0 0 39 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="31" height="4" rx="2" fill="#DC7000" />
+                <rect x="34" width="5" height="4" rx="2" fill="#DC7000" />
+              </svg>
+            </span>
+          </nav>
+          <a
+            class="px-7 py-3 bg-[#FA9021] rounded-[6px] capitalize"
+            href="./contact.html"
+            >Contact us</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="text-center flex items-center justify-center h-[60px] bg-black text-white py-10 md:p-20">
+      <span class="text-[14px]">Home > <span class="text-[#FA9021]">News</span></span>
+    </section>
+    <!-- header Section End -->
+    <!-- Hero START -->
+    <section class="p-3 py-3 md:px-6 md:py-6 lg:px-20 w-full bg-black text-white grid grid-cols-1">
+      <div class="mx-auto text-center h-1/2 flex flex-col gap-5 items-center justify-center">
+        <h3 class="text-[16px] max-w-[80%] md:leading-[40px] lg:leading-[80px] md:text-[24px] lg:text-[32px] xl:text-[40px] font-medium leading-5">
+          Lorem Ipsum is simply dummy text of the printing and.
+        </h3>
+        <p class="text-[12px] font-light max-w-[80%] md:text-[16px] lg:text-[20px]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div class="w-2/3 mx-auto">
+        <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-[#1C140F] overflow-hidden">
+          <div class="grid place-items-center h-full w-12 text-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+
+          <input
+            class="h-full w-full outline-none text-[14] lg:text-xl text-white pr-2 bg-[#1C140F]"
+            type="text"
+            id="search"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Hero END -->
+    <!-- Main COntent -->
+    <section
+      class="w-full mx-auto p-3 py-10 md:px-10 md:py-10 bg-[#070707] text-white"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full mx-auto">
+        <!-- Large Post -->
+        <div class="flex flex-col gap-8 w-full mx-auto">
+          <div>
+            <div
+              class="w-full h-[200px] md:h-[300px] 2xl:h-[400px] overflow-hidden rounded-[10px]"
+            >
+              <img src="./assets/img/g2.jpeg" alt="" />
+            </div>
+            <div class="py-4 lg:py-8 2xl:py-12">
+              <span
+                class="bg-blue-600 px-2 py-1 text-[12px] lg:text-[16px] 2xl:text-[20px]"
+                >Jhon Smash</span
+              >
+              <span class="text-[12px] ml-2 lg:text-[16px] 2xl:text-[20px]"
+                >.5min</span
+              >
+            </div>
+            <div class="flex flex-col gap-5">
+              <h1
+                class="text-[16px] lg:text-[24px] xl:text-[32px] font-semibold"
+              >
+                Lorem Ipsum is simply dummy text dummy text
+              </h1>
+              <p class="text-[14px] lg:text-[18px] font-light md:font-normal">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries,
+              </p>
+              <p class="text-[14px] lg:text-[18px] font-normal">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full h-[1px] bg-[rgb(165,165,165,.5)] my-12 lg:my-16"
+          ></div>
+          <div>
+            <div
+              class="w-full h-[200px] md:h-[300px] 2xl:h-[400px] overflow-hidden rounded-[10px]"
+            >
+              <img src="./assets/img/g4.jpeg" alt="" />
+            </div>
+            <div class="py-4 lg:py-8 2xl:py-12">
+              <span
+                class="bg-blue-600 px-2 py-1 text-[12px] lg:text-[16px] 2xl:text-[20px]"
+                >Jhon Smash</span
+              >
+              <span class="text-[12px] ml-2 lg:text-[16px] 2xl:text-[20px]"
+                >.5min</span
+              >
+            </div>
+            <div class="flex flex-col gap-5">
+              <h1
+                class="text-[16px] lg:text-[24px] xl:text-[32px] font-semibold"
+              >
+                Lorem Ipsum is simply dummy text dummy text
+              </h1>
+              <p class="text-[14px] lg:text-[18px] font-light md:font-normal">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries,
+              </p>
+              <p class="text-[14px] lg:text-[18px] font-normal">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Sidebar Post -->
+        <div class="flex flex-col gap-8 w-full mx-auto">
+          <!-- Single Post -->
+          <div class="flex gap-4 w-full justify-between">
+            <div
+              class="h-[150px] max-w-[150px] flex-1 object-cover rounded-[10px] overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/p1.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5 justify-center flex-1">
+              <div class="flex gap-5 items-center">
+                <p class="bg-[#FF8484] px-2 py-1 text-[12px]">Jhon Smash</p>
+                <span class="text-[12px]">.5min</span>
+              </div>
+              <h1 class="text-[16px]">
+                Lorem Ipsum is simply dummy text dummy text ?
+              </h1>
+            </div>
+          </div>
+          <!-- Single Post -->
+          <div class="flex gap-4 w-full justify-between">
+            <div
+              class="h-[150px] max-w-[150px] flex-1 object-cover rounded-[10px] overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/p2.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5 justify-center flex-1">
+              <div class="flex gap-5 items-center">
+                <p class="bg-[#2351F5] px-2 py-1 text-[12px]">Jhon Smash</p>
+                <span class="text-[12px]">.5min</span>
+              </div>
+              <h1 class="text-[16px]">
+                Lorem Ipsum is simply dummy text dummy text ?
+              </h1>
+            </div>
+          </div>
+          <!-- Single Post -->
+          <div class="flex gap-4 w-full justify-between">
+            <div
+              class="h-[150px] max-w-[150px] flex-1 rounded-[10px] overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/p3.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5 justify-center flex-1">
+              <div class="flex gap-5 items-center">
+                <p class="bg-[#FF7C32] px-2 py-1 text-[12px]">Jhon Smash</p>
+                <span class="text-[12px]">.5min</span>
+              </div>
+              <h1 class="text-[16px]">
+                Lorem Ipsum is simply dummy text dummy text ?
+              </h1>
+            </div>
+          </div>
+          <!-- Single Post -->
+          <div class="flex gap-4 w-full justify-between">
+            <div
+              class="h-[150px] max-w-[150px] flex-1 rounded-[10px] overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/p4.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5 justify-center flex-1">
+              <div class="flex gap-5 items-center">
+                <p class="bg-[#2351F5] px-2 py-1 text-[12px]">Jhon Smash</p>
+                <span class="text-[12px]">.5min</span>
+              </div>
+              <h1 class="text-[16px]">
+                Lorem Ipsum is simply dummy text dummy text ?
+              </h1>
+            </div>
+          </div>
+          <!-- Single Post -->
+          <div class="flex gap-4 w-full justify-between">
+            <div
+              class="h-[150px] max-w-[150px] flex-1 rounded-[10px] overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/p5.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5 justify-center flex-1">
+              <div class="flex gap-5 items-center">
+                <p class="bg-[#23A54F] px-2 py-1 text-[12px]">Jhon Smash</p>
+                <span class="text-[12px]">.5min</span>
+              </div>
+              <h1 class="text-[16px]">
+                Lorem Ipsum is simply dummy text dummy text ?
+              </h1>
+            </div>
+          </div>
+          <!-- Single Post -->
+          <div class="flex gap-4 w-full justify-between">
+            <div
+              class="h-[150px] max-w-[150px] flex-1 rounded-[10px] overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/p6.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5 justify-center flex-1">
+              <div class="flex gap-5 items-center">
+                <p class="bg-blue-600 px-2 py-1 text-[12px]">Jhon Smash</p>
+                <span class="text-[12px]">.5min</span>
+              </div>
+              <h1 class="text-[16px]">
+                Lorem Ipsum is simply dummy text dummy text ?
+              </h1>
+            </div>
+          </div>
+          <!-- Single Post -->
+          <div class="flex gap-4 w-full justify-between">
+            <div
+              class="h-[150px] max-w-[150px] flex-1 rounded-[10px] overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/p7.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5 justify-center flex-1">
+              <div class="flex gap-5 items-center">
+                <p class="bg-[#9921C3] px-2 py-1 text-[12px]">Jhon Smash</p>
+                <span class="text-[12px]">.5min</span>
+              </div>
+              <h1 class="text-[16px]">
+                Lorem Ipsum is simply dummy text dummy text ?
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main COntent ENd -->
+
+    <!-- Subscribe END -->
+    <section
+      class="p-3 py-3 md:px-6 md:py-6 w-full bg-[#100901] text-white grid grid-cols-1"
+    >
+      <div>
+        <h1 class="font-medium text-center text-[24px]">Lorem Ipsum</h1>
+        <p
+          class="mt-[20px] font-normal text-center text-[14px] max-w-[30ch] mx-auto"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div
+        class="bg-[#1C140F] grid grid-cols-1 md:grid-cols-2 py-4 px-6 md:py-10 md:px-10 lg:px-16 lg:py-16 gap-5 rounded-[15px] my-10"
+      >
+        <div class="flex gap-4 flex-col">
+          <h1 class="font-medium text-center text-[24px] md:text-left">
+            Stay in the loop
+          </h1>
+          <p class="font-light text-center text-[14px] md:text-left">
+            Subscribe to receive the latest news and updates about TDA. We
+            promise not to spam you!
+          </p>
+        </div>
+        <div class="relative py-6 h-12">
+          <input
+            type="text"
+            class="w-full absolute top-[50%] translate-y-[-50%] bg-white text-gray-800 px-3 py-2 lg:px-5 lg:py-4 rounded-[5px] text-[12px] lg:text-[16px] outline-none"
+            placeholder="Enter Your Email"
+          />
+          <a
+            class="absolute top-[50%] right-1 bg-[#DC7000] px-2 py-1 lg:px-4 lg:py-3 rounded-[5px] text-[12px] translate-y-[-50%] lg:text-[16px]"
+            href=""
+          >
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="p-3 py-3 md:px-10 md:py-10 w-full bg-[#070707] text-white">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-3">
+          <a class="font-extrabold text-[24px]" href="index.html">Logo</a>
+          <p class="text-[14px] font-light">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <p class="text-[14px] font-light">@Lorem</p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-medium text-[16px]">About us</h3>
+          <span class="text-[14px] font-light">Zeux</span>
+          <span class="text-[14px] font-light">Portfolio</span>
+          <span class="text-[14px] font-light">Careers</span>
+          <span class="text-[14px] font-light">Contact us</span>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-medium text-[16px]">Contact us</h3>
+          <span class="text-[14px] font-light"
+            >Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </span>
+          <span class="text-[14px] font-light">+908 89097 890</span>
+        </div>
+        <div class="flex items-center justify-center gap-5">
+          <div
+            class="bg-[#fff] overflow-hidden p-[10px] rounded-full h-[34px] w-[34px] flex place-self-center"
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_1201)">
+                <path
+                  d="M7.9985 1.9925H9.094V0.0845C8.905 0.0585 8.255 0 7.498 0C5.91851 0 4.83651 0.9935 4.83651 2.8195V4.5H3.09351V6.633H4.83651V12H6.97351V6.6335H8.646L8.9115 4.5005H6.97301V3.031C6.97351 2.4145 7.1395 1.9925 7.9985 1.9925Z"
+                  fill="#000"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_1201">
+                  <rect width="12" height="12" fill="#fff" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div
+            class="bg-[#fff] overflow-hidden p-[10px] rounded-full h-[34px] w-[34px] flex place-self-center"
+          >
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_1206)">
+                <path
+                  d="M9.481 0H3.51898C1.57858 0 0 1.57858 0 3.51898V9.4811C0 11.4214 1.57858 13 3.51898 13H9.4811C11.4214 13 13 11.4214 13 9.4811V3.51898C13 1.57858 11.4214 0 9.481 0V0ZM12.2379 9.4811C12.2379 11.0012 11.0012 12.2379 9.481 12.2379H3.51898C1.99881 12.2379 0.762114 11.0012 0.762114 9.4811V3.51898C0.762114 1.99881 1.99881 0.762114 3.51898 0.762114H9.4811C11.0012 0.762114 12.2379 1.99881 12.2379 3.51898V9.4811Z"
+                  fill="#000"
+                />
+                <path
+                  d="M6.49989 2.9454C4.53986 2.9454 2.94531 4.53995 2.94531 6.49999C2.94531 8.46002 4.53986 10.0546 6.49989 10.0546C8.45993 10.0546 10.0545 8.46002 10.0545 6.49999C10.0545 4.53995 8.45993 2.9454 6.49989 2.9454ZM6.49989 9.29245C4.96019 9.29245 3.70743 8.03978 3.70743 6.49999C3.70743 4.96028 4.96019 3.70752 6.49989 3.70752C8.03969 3.70752 9.29236 4.96028 9.29236 6.49999C9.29236 8.03978 8.03969 9.29245 6.49989 9.29245Z"
+                  fill="#000"
+                />
+                <path
+                  d="M10.1394 1.68301C9.56023 1.68301 9.08911 2.15423 9.08911 2.73335C9.08911 3.31257 9.56023 3.78379 10.1394 3.78379C10.7187 3.78379 11.1899 3.31257 11.1899 2.73335C11.1899 2.15413 10.7187 1.68301 10.1394 1.68301ZM10.1394 3.02157C9.98056 3.02157 9.85122 2.89224 9.85122 2.73335C9.85122 2.57436 9.98056 2.44513 10.1394 2.44513C10.2984 2.44513 10.4278 2.57436 10.4278 2.73335C10.4278 2.89224 10.2984 3.02157 10.1394 3.02157Z"
+                  fill="#000"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_1206">
+                  <rect width="13" height="13" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div
+            class="bg-[#fff] overflow-hidden p-[10px] rounded-full h-[34px] w-[34px] flex place-self-center"
+          >
+            <svg
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_1220)">
+                <path
+                  d="M10.9973 11V10.9995H11.0001V6.96528C11.0001 4.9917 10.5752 3.47141 8.26795 3.47141C7.15879 3.47141 6.41445 4.08007 6.11058 4.65711H6.07849V3.65566H3.89087V10.9995H6.16879V7.36311C6.16879 6.40566 6.35029 5.47982 7.536 5.47982C8.70429 5.47982 8.7217 6.57249 8.7217 7.42453V11H10.9973Z"
+                  fill="#000"
+                />
+                <path
+                  d="M0.181396 3.65613H2.46206V11H0.181396V3.65613Z"
+                  fill="#000"
+                />
+                <path
+                  d="M1.32092 0C0.591708 0 0 0.591708 0 1.32092C0 2.05013 0.591708 2.65421 1.32092 2.65421C2.05013 2.65421 2.64183 2.05013 2.64183 1.32092C2.64138 0.591708 2.04967 0 1.32092 0V0Z"
+                  fill="#000"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_1220">
+                  <rect width="11" height="11" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div
+            class="bg-[#fff] overflow-hidden p-[10px] rounded-full h-[34px] w-[34px] flex place-self-center"
+          >
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_1213)">
+                <path
+                  d="M13 2.46919C12.5166 2.68125 12.0014 2.82181 11.4644 2.89006C12.0169 2.56019 12.4386 2.04181 12.6368 1.417C12.1217 1.72412 11.5529 1.94106 10.9468 2.06213C10.4577 1.54131 9.76056 1.21875 9.00006 1.21875C7.52456 1.21875 6.33669 2.41638 6.33669 3.88456C6.33669 4.09581 6.35456 4.29894 6.39844 4.49231C4.18275 4.38425 2.22219 3.32231 0.905125 1.70463C0.675187 2.10356 0.540313 2.56019 0.540313 3.05175C0.540313 3.97475 1.01562 4.79294 1.72413 5.26662C1.29594 5.2585 0.875875 5.13419 0.52 4.93837C0.52 4.9465 0.52 4.95706 0.52 4.96762C0.52 6.26275 1.44381 7.3385 2.65525 7.58631C2.43831 7.64563 2.20187 7.67406 1.9565 7.67406C1.78587 7.67406 1.61362 7.66431 1.45194 7.62856C1.79725 8.684 2.77713 9.45994 3.94225 9.48512C3.0355 10.1944 1.88419 10.6218 0.637812 10.6218C0.41925 10.6218 0.209625 10.6121 0 10.5852C1.18056 11.3466 2.57969 11.7812 4.0885 11.7812C8.99275 11.7812 11.674 7.71875 11.674 4.19737C11.674 4.07956 11.6699 3.96581 11.6643 3.85287C12.1932 3.4775 12.6376 3.00869 13 2.46919Z"
+                  fill="#000"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_1213">
+                  <rect width="13" height="13" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[1px] bg-white my-10"></div>
+      <span class="flex justify-center items-center text-[12px] mx-auto w-full"
+        >Copyright &copy; 2021 Lorem All rights Rcerved</span
+      >
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

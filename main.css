@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* menu hover underline  */
+
+* {
+  @apply box-border;
+}
+
+a {
+  @apply decoration-0 cursor-pointer;
+}
+
+.nav__hover {
+  @apply absolute bottom-[-10px] rounded-sm left-0  bg-no-repeat w-[40px] h-[5px] block transition-all duration-500 ease-in-out;
+}
+.nav__link:nth-child(1):hover ~ span {
+  @apply left-[0px];
+}
+.nav__link:nth-child(2):hover ~ span {
+  @apply xl:left-[135px] lg:left-[120px];
+}
+.nav__link:nth-child(3):hover ~ span {
+  @apply xl:left-[285px] lg:left-[270px];
+}
+.nav__link:nth-child(4):hover ~ span {
+  @apply xl:left-[433px] lg:left-[400px];
+}
+
+.section_reveal {
+  scale: 0.5em;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 200px 500px;
+}
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.swiper-container {
+  @apply w-full h-full;
+}
+
+.swiper-slide {
+  @apply text-center text-[18px] bg-white;
+}

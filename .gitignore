@@ -1,1 +1,4 @@
 node_modules
+*.txt
+test.html
+navbar.html
